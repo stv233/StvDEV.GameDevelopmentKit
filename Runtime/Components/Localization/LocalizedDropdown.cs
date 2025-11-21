@@ -54,7 +54,7 @@ namespace StvDEV.Components.Localization
         [Tooltip("Localized text variants.")]
         [SerializeField] private List<DropdownLocalizationData> _localizations;
 
-        private void Start()
+        private void OnEnable()
         {
             LocalizationManager.LanguageChanged.AddListener(SetLanguage);
             SetLanguage(LocalizationManager.Language);

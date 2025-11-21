@@ -22,7 +22,7 @@ namespace StvDEV.Components.Localization
     [HelpURL("https://docs.stvdev.pro/StvDEV/Components/Localization/LocalizationManager/index.html")]
     public class LocalizationManager : MonoBehaviourSingleton<LocalizationManager>
     {
-        private static string s_language = "en-US";
+        private static string s_language = "en";
         private static readonly UnityEvent<string> s_languageChanged = new();
 
         /// <summary>
