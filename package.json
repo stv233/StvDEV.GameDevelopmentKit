@@ -1,11 +1,11 @@
 {
-  "name": "com.stvdev.starterpack",
-  "version": "2.19.7",
-  "displayName": "StvDEV Basic Scripts Package",
+  "name": "com.stvdev.gdk",
+  "version": "3.1.1",
+  "displayName": "StvDEV Game Development Kit",
   "description": "A set of basic scripts and components for rapid prototyping and designing Unity projects.",
   "documentationUrl": "https://docs.stvdev.pro/StvDEV/index.html",
-  "licensesUrl": "https://github.com/stv233/StarterPack/blob/master/LICENSE.md",
-  "changelogUrl": "https://github.com/stv233/StarterPack/commits/master",
+  "licensesUrl": "https://github.com/stv233/StvDEV.GameDevelopmentKit/blob/master/LICENSE.md",
+  "changelogUrl": "https://github.com/stv233/StvDEV.GameDevelopmentKit/commits/master/",
   "license": "MIT",
   "unity": "2021.3",
   "dependencies": {
@@ -19,7 +19,10 @@
     "scripts",
     "package",
     "integration",
-    "start"
+    "start",
+    "game",
+    "development",
+    "game development"
   ],
   "author": {
     "name": "StvDEV.PRO",

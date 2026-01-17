@@ -1,0 +1,20 @@
+{
+    "name": "StvDEV.GDK.Components",
+    "rootNamespace": "StvDEV.GDK.Components",
+    "references": [
+        "Unity.TextMeshPro",
+        "StvDEV.GDK.Inspector",
+        "StvDEV.GDK.Patterns",
+        "StvDEV.GDK.Types",
+        "StvDEV.GDK.Extensions"
+    ],
+    "includePlatforms": [],
+    "excludePlatforms": [],
+    "allowUnsafeCode": false,
+    "overrideReferences": false,
+    "precompiledReferences": [],
+    "autoReferenced": true,
+    "defineConstraints": [],
+    "versionDefines": [],
+    "noEngineReferences": false
+}

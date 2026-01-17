@@ -1,0 +1,40 @@
+using UnityEngine;
+using UnityEngine.UI;
+
+namespace StvDEV.GDK.Components.UI.Fields
+{
+    /// <summary>
+    /// Field with checkbox.
+    /// </summary>
+    [AddComponentMenu("StvDEV/Game Development Kit/UI/Fields/Chackbox Field")]
+    [HelpURL("https://docs.stvdev.pro/StvDEV/GDK/Components/UI/Fields/CheckboxField/index.html")]
+    public class CheckboxField : Field<bool>
+    {
+        [Header("Checkbox")]
+        [Tooltip("Field toggle component.")]
+        [SerializeField] private Toggle _toggle;
+
+        public override bool Value
+        {
+            get => _toggle.isOn;
+            set => _toggle.isOn = value;
+        }
+
+        public override bool IsReadOnly
+        {
+            get => _toggle.interactable;
+            set => _toggle.interactable = value;
+        }
+
+        public override bool IsFocused => false;
+
+        private void Awake()
+        {
+            _toggle.onValueChanged.AddListener(value =>
+            {
+                ValueChanged?.Invoke(value);
+            });
+        }
+
+    }
+}

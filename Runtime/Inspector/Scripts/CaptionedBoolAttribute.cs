@@ -1,0 +1,37 @@
+using System;
+using UnityEngine;
+
+namespace StvDEV.GDK.Inspector
+{
+    /// <summary>
+    /// Draws the bool value as a drop-down list with a signed selection.
+    /// </summary>
+    [AttributeUsage(AttributeTargets.Field | AttributeTargets.Property |
+       AttributeTargets.Class | AttributeTargets.Struct, Inherited = true)]
+    public class CaptionedBoolAttribute : PropertyAttribute
+    {
+        private readonly string _true;
+        private readonly string _false;
+
+        /// <summary>
+        /// True annotation.
+        /// </summary>
+        public string True => _true;
+
+        /// <summary>
+        /// False annotation.
+        /// </summary>
+        public string False => _false;
+
+        /// <summary>
+        /// Draws the bool value as a drop-down list with a signed selection.
+        /// </summary>
+        /// <param name="trueAnnotation">True annotation</param>
+        /// <param name="falseAnnotation">False annotation</param>
+        public CaptionedBoolAttribute(string trueAnnotation = "Yes", string falseAnnotation = "No")
+        {
+            _true = trueAnnotation;
+            _false = falseAnnotation;
+        }
+    }
+}

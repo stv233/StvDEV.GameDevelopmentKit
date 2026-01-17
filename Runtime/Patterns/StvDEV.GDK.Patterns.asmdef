@@ -1,0 +1,16 @@
+{
+    "name": "StvDEV.GDK.Patterns",
+    "rootNamespace": "StvDEV.GDK.Patterns",
+    "references": [
+        "GUID:9a2f18c2c161a32469281b7f51049ffb"
+    ],
+    "includePlatforms": [],
+    "excludePlatforms": [],
+    "allowUnsafeCode": false,
+    "overrideReferences": false,
+    "precompiledReferences": [],
+    "autoReferenced": true,
+    "defineConstraints": [],
+    "versionDefines": [],
+    "noEngineReferences": false
+}
