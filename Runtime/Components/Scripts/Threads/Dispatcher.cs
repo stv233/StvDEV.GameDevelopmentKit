@@ -25,6 +25,7 @@ namespace StvDEV.GDK.Components.Threads
 
         protected void Awake()
         {
+            Instance = this;
             _mainThread = Thread.CurrentThread;
         }
 

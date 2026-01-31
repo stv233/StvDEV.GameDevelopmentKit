@@ -29,6 +29,10 @@ namespace StvDEV.GDK.Patterns
 
                 return _instance;
             }
+            set
+            {
+                _instance = value; 
+            }
         }
 
         /// <summary>
