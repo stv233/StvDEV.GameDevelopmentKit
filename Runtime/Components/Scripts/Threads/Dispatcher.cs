@@ -20,8 +20,8 @@ namespace StvDEV.GDK.Components.Threads
         /// <summary>
         /// Returns whether the current execution thread is the main unity execution thread.
         /// </summary>
-        /// <returns>True - if the current thread is the main Unity thread, otherwise False</returns>
-        public static bool InvokeRequired => Instance._mainThread.Equals(Thread.CurrentThread);
+        /// <returns>True - if the current thread is not the main Unity thread, otherwise False</returns>
+        public static bool InvokeRequired => !Instance._mainThread.Equals(Thread.CurrentThread);
 
         protected void Awake()
         {
